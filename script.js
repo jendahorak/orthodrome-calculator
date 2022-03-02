@@ -1,15 +1,12 @@
 
-
 window.onload = function () {
     let dmsToDec = document.getElementById("dmsToDec")
-    //  fuknce pro výpis výsledků abych  když konvertuji více souřadnic si je mohl pak jen kopírovat
     function printResults(result, where) {
         let printResult = document.createElement('p')
         printResult.innerHTML = result
         document.getElementById(where).appendChild(printResult)
     }
 
-    // nutné funkce pro korektní výpočet ortodoromy, potřeba počítat s radiany
     function toRadians(angle) {
         return angle * (Math.PI / 180);
     }
@@ -19,7 +16,7 @@ window.onload = function () {
     }
 
 
-    // počítá nejkratší vzál. na kouli o poloměru R
+
     function orto(A_lat, A_lon, B_lat, B_lon) {
         let A = [1.57079633 - toRadians(A_lat), toRadians(A_lon)]
         let B = [1.57079633 - toRadians(B_lat), toRadians(B_lon)]
@@ -30,7 +27,7 @@ window.onload = function () {
         return d.toFixed(2)
     }
 
-    // fukncionalita reset tlačítek
+
     function clearPage() {
         document.getElementById('decResult').innerHTML = ''
         document.getElementById('decResults').innerHTML = ''
