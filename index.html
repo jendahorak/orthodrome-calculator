@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <title>Form</title>
+
+    <!-- import funguje jen v vscodu když stránku otevřu jako live server, když to otevřu jako html v prohlížeči, není schopný načíst three.js knihovnu, pravděpodobně to je trivální problém, ale zatím jsem mu neporozuměl -->
+    <script src="script.js"></script>
     <script src="//unpkg.com/three"></script>
     <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
     <script src="//unpkg.com/three-globe"></script>
@@ -92,7 +94,5 @@
     <div class='globe_cont'>
         <div id='globeViz' class="globeviz"></div>
     </div>
-    <script>
-    </script>
 </body>
 </html>
